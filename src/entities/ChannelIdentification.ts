@@ -7,7 +7,7 @@ export default class ChannelIdentification {
 		description: string;
 		thumbnail: string;
 	};
-	isSailingChannel: boolean;
+	isGuitarChannel: boolean;
 	source: string;
 	status: string;
 

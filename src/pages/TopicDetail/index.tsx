@@ -45,7 +45,7 @@ function TopicDetail(props: any) {
 	return (
 		<>
 			<Helmet>
-				<title>Topic: {topic.title} | Sailing Channels</title>
+				<title>Topic: {topic.title} | Guitar Channels</title>
 			</Helmet>
 
 			<nav className="breadcrumb" aria-label="breadcrumbs">

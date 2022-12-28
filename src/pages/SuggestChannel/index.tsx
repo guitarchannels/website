@@ -28,7 +28,7 @@ function SuggestChannel(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Suggest a channel | Sailing Channels</title>
+				<title>Suggest a channel | Guitar Channels</title>
 			</Helmet>
 
 			<Hero
@@ -38,10 +38,10 @@ function SuggestChannel(props) {
 
 			<p>
 				There are currently 1219 channels and 120881 videos listed in this site, but we probably
-				missed one or another interesting sailing YouTube channel!
+				missed one or another interesting guitar YouTube channel!
 			</p>
 			<p className="top-spacer">
-				Know of any sailing channels that are not listed here? Well, that's brilliant! You can use the
+				Know of any guitar channels that are not listed here? Well, that's brilliant! You can use the
 				form below to check and suggest a channel for the list:
 			</p>
 

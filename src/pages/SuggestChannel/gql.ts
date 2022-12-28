@@ -9,7 +9,7 @@ export const CHANNEL_SUGGESTIONS_QUERY = gql`
 				description
 				thumbnail
 			}
-			isSailingChannel
+			isGuitarChannel
 			source
 		}
 	}

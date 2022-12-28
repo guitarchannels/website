@@ -4,7 +4,6 @@ import mainMenuData from "../../data/NavMenuData";
 import MainMenuSection from "../../entities/MainMenuSection";
 import MainMenuItem from "../../entities/MainMenuItem";
 import GlobalContext from "../../contexts/GlobalContext";
-import { logout, setSignInOpen } from "../../Common";
 import classNames from "classnames";
 
 export default function NavMenuMobile() {
@@ -44,30 +43,6 @@ export default function NavMenuMobile() {
 							</Fragment>
 						);
 					})}
-				</div>
-			</div>
-
-			<div className="navbar-end">
-				<div className="navbar-item">
-					<div className="buttons">
-						{!globalContext.state.loggedIn ? (
-							<a
-								className="button is-info"
-								onClick={() => {
-									setSignInOpen(globalContext, true);
-									setOpen(false);
-								}}
-							>
-								<i className="fas fa-sign-in-alt icon-spacer"></i>
-								<strong>Sign in</strong>
-							</a>
-						) : (
-							<a className="button is-info" onClick={logout}>
-								<i className="fas fa-sign-out-alt icon-spacer"></i>
-								<strong>Log out</strong>
-							</a>
-						)}
-					</div>
 				</div>
 			</div>
 		</div>

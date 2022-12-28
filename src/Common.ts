@@ -8,20 +8,6 @@ export function logout() {
 	location.href = "/";
 }
 
-export function setSignInOpen(
-	globalContext: {
-		state: GlobalState;
-		dispatch?: React.Dispatch<GlobalState & ReducerAction<GlobalActions>>;
-	},
-	open: boolean
-) {
-	globalContext.dispatch({
-		...globalContext.state,
-		type: GlobalActions.SET_SIGNIN_MODAL_OPEN,
-		signInModalOpen: open
-	});
-}
-
 export function formatSI(input: number): string {
 	const formatPattern = input < 10 ? ".1s" : ".2s";
 	return format(formatPattern)(input);

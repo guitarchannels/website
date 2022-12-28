@@ -6,14 +6,14 @@ function PrivacyPolicy(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Privacy Policy | Sailing Channels</title>
+				<title>Privacy Policy | Guitar Channels</title>
 			</Helmet>
 
 			<Hero title="Privacy Policy" />
 
 			<h3 className="is-size-3 top-spacer">Data Controller and Owner</h3>
 			<p>
-				Sailing Channels, <span className="reverse">moc.slennahc-gnilias@yoha</span>
+				Guitar Channels, <span className="reverse">moc.slennahc-gnilias@yoha</span>
 			</p>
 
 			<h3 className="is-size-3 top-spacer">Types of Data collected</h3>

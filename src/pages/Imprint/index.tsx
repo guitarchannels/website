@@ -6,7 +6,7 @@ function Imprint(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Imprint | Sailing Channels</title>
+				<title>Imprint | Guitar Channels</title>
 			</Helmet>
 
 			<Hero title="Imprint" />
@@ -39,7 +39,7 @@ function Imprint(props) {
 			</p>
 			<h3 className="is-size-3 top-spacer">Data protection</h3>
 			<p>
-				In general, when visiting the website of “Sailing Channels”, no personal data are saved. No
+				In general, when visiting the website of “Guitar Channels”, no personal data are saved. No
 				data will be passed on to third parties without your consent. We point out that in regard to
 				unsecured data transmission in the internet (e.g. via email), security cannot be guaranteed.
 				Such data could possibIy be accessed by third parties.
@@ -62,7 +62,7 @@ function Imprint(props) {
 				data about you by Google in the manner and for the purposes set out above.
 			</p>
 			<h4 className="is-size-4 top-spacer">
-				How to prevent being tracked by Google Analytics on sailing-channels.com
+				How to prevent being tracked by Google Analytics on guitar-channels.com
 			</h4>
 
 			<ul>

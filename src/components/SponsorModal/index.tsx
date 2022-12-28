@@ -50,7 +50,7 @@ const SponsorModal = () => {
 						Maintaining this website costs time and money.
 					</div>
 					<div style={{ marginBottom: "2rem" }}>
-						If you like this overview of sailing channels, please consider supporting the project:
+						If you like this overview of guitar channels, please consider supporting the project:
 					</div>
 					<nav className="level" style={{ marginBottom: "1rem" }}>
 						<div className="level-item has-text-centered">
@@ -67,7 +67,7 @@ const SponsorModal = () => {
 						</div>
 						<div className="level-item has-text-centered">
 							<a
-								href="https://paypal.me/sailingchannels"
+								href="https://paypal.me/guitarchannels"
 								target="_blank"
 								className="button is-info is-rounded is-medium"
 								onClick={() => {

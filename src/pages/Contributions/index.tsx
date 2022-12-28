@@ -7,7 +7,7 @@ function Contributions(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Contributions | Sailing Channels</title>
+				<title>Contributions | Guitar Channels</title>
 			</Helmet>
 
 			<Hero title="Contributions" />
@@ -117,9 +117,9 @@ function Contributions(props) {
 						<td>
 							<Link
 								to="/channel/UCNYlvlreZiRRHo_v5Nmrfow"
-								title="Go to Sailing Zatara's channel"
+								title="Go to Guitar Zatara's channel"
 							>
-								Sailing Zatara
+								Guitar Zatara
 							</Link>
 							, David V.
 						</td>

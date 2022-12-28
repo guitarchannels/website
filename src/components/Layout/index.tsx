@@ -1,8 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import { Switch, Route, HashRouter, Link } from "react-router-dom";
-import useAxios, { configure } from "axios-hooks";
+import { configure } from "axios-hooks";
 import Axios from "axios";
-import { IdentityService } from "../../ServiceUrls";
 import pckg from "../../../package.json";
 
 // pages
@@ -20,10 +19,7 @@ import PrivacyPolicy from "../../pages/PrivacyPolicy";
 // components
 import NavMenuMobile from "../NavMenuMobile";
 import NavMenu from "../NavMenu";
-import GlobalContext, { GlobalActions } from "../../contexts/GlobalContext";
 import SuggestChannel from "../../pages/SuggestChannel";
-import UserMenu from "../UserMenu";
-import SignInModal from "../SignInModal";
 import ScrollToTop from "../ScrollToTop";
 import SponsorModal from "../SponsorModal";
 import BackUpButton from "../BackUpButton";
@@ -33,51 +29,12 @@ const axios = Axios.create({ withCredentials: true });
 configure({ axios });
 
 export default function Layout() {
-	const [{ data, loading, error }] = useAxios<string[]>(`${IdentityService()}/api/me/subscriptions`, {
-		useCache: false
-	});
-
-	const globalContext = useContext(GlobalContext.Context);
-
-	useEffect(() => {
-		// subscription data is successfully loaded
-		if (!loading && data && !error && globalContext.state.subscriptions.length === 0) {
-			globalContext.dispatch({
-				...globalContext.state,
-				type: GlobalActions.SET_SUBSCRIPTIONS,
-				subscriptions: data
-			});
-		}
-	}, [data]);
-
-	useEffect(() => {
-		// data is not null, but error is, we are logged in
-		if (data && !error) {
-			globalContext.dispatch({
-				...globalContext.state,
-				type: GlobalActions.SET_LOGGED_IN,
-				loggedIn: true
-			});
-		}
-
-		// a 401 error returned, we are def. logged out!
-		if (error?.response?.status === 401) {
-			globalContext.dispatch({
-				...globalContext.state,
-				type: GlobalActions.SET_LOGGED_IN,
-				loggedIn: false
-			});
-		}
-	}, [error, data]);
-
 	return (
 		<HashRouter>
 			<GoogleAnalyticsPageViewTracker />
 			<SponsorModal />
 			<ScrollToTop />
 			<NavMenuMobile />
-			<SignInModal />
-			<UserMenu />
 			<section className="section main-section">
 				<div className="container">
 					<div className="columns">
@@ -118,7 +75,7 @@ export default function Layout() {
 						<a
 							className="has-text-grey-light"
 							target="_blank"
-							href="https://github.com/sailingchannels"
+							href="https://github.com/guitarchannels"
 						>
 							<i className="fas fa-code" /> on GitHub
 						</a>

@@ -9,7 +9,6 @@ import { CHANNEL_DETAIL_QUERY } from "./gql";
 import LoadingIndicator from "../../components/LoadingIndicator";
 import { Helmet } from "react-helmet";
 import Hero from "../../components/Hero";
-import FlagButton from "../../components/FlagButton";
 import SubscriberHistoryChart from "../../components/SubscriberHistoryChart";
 import UploadPrediction from "../../components/UploadPrediction";
 import { formatSI } from "../../Common";
@@ -34,7 +33,7 @@ function ChannelDetail(props: any) {
 	return (
 		<>
 			<Helmet>
-				<title>{channel.title} | Sailing Channels</title>
+				<title>{channel.title} | Guitar Channels</title>
 			</Helmet>
 
 			<Hero
@@ -77,9 +76,6 @@ function ChannelDetail(props: any) {
 						>
 							<i className="fas fa-external-link-alt" /> Open YouTube channel
 						</a>
-					</p>
-					<p>
-						<FlagButton channelId={channel.iD}></FlagButton>
 					</p>
 
 					<Tags tags={channel.keywords} />

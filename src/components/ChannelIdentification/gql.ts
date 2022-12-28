@@ -9,7 +9,7 @@ export const IDENTIFY_CHANNELS_QUERY = gql`
 				description
 				thumbnail
 			}
-			isSailingChannel
+			isGuitarChannel
 			source
 			status
 		}

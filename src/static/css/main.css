@@ -44,14 +44,14 @@ h1 {
 }
 
 .logo .front {
-	background: url("https://cdn.jsdelivr.net/gh/thomasbrueggemann/sailing-channels/public/img/logo.svg")
-		0 0 no-repeat;
+	background: url("https://cdn.jsdelivr.net/gh/thomasbrueggemann/guitar-channels/public/img/logo.svg") 0 0
+		no-repeat;
 	background-size: contain;
 }
 
 .logo .back {
-	background: url("https://cdn.jsdelivr.net/gh/thomasbrueggemann/sailing-channels/public/img/logo2.svg")
-		0 0 no-repeat;
+	background: url("https://cdn.jsdelivr.net/gh/thomasbrueggemann/guitar-channels/public/img/logo2.svg") 0 0
+		no-repeat;
 	background-size: contain;
 }
 

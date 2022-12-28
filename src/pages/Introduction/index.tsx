@@ -6,13 +6,13 @@ function Introduction(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Introduction | Sailing Channels</title>
+				<title>Introduction | Guitar Channels</title>
 			</Helmet>
 
 			<Hero title="Introduction" subtitle="How does this page work?" />
 
 			<p>
-				Well basically what this website does is list youtube channels that are related to sailing,
+				Well basically what this website does is list youtube channels that are related to guitar,
 				circumnavigation or people living aboard their boats.
 			</p>
 			<p style={{ marginTop: "20px" }}>

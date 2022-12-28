@@ -43,12 +43,12 @@ export default function ChannelList(props: any) {
 	return (
 		<>
 			<Helmet>
-				<title>Sailing-Channels</title>
+				<title>Guitar-Channels</title>
 			</Helmet>
 
 			<section className="hero channels-hero">
 				<div className="hero-body">
-					<h1 className="title">Sailing Channels</h1>
+					<h1 className="title">Guitar Channels</h1>
 					<h2 className="subtitle">
 						sorted by <strong>{sortByRaw}</strong>
 					</h2>

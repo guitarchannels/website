@@ -7,12 +7,12 @@ interface SuggestChannelSubscriptionsProps {
 }
 
 function SuggestChannelSubscriptions(props: SuggestChannelSubscriptionsProps) {
-	const sailingRelated: ChannelIdentification[] = props?.channelSuggestions?.filter((c) => {
-		return c.isSailingChannel === true;
+	const guitarRelated: ChannelIdentification[] = props?.channelSuggestions?.filter((c) => {
+		return c.isGuitarChannel === true;
 	});
 
-	const notSailingRelated: ChannelIdentification[] = props?.channelSuggestions?.filter((c) => {
-		return c.isSailingChannel === false;
+	const notGuitarRelated: ChannelIdentification[] = props?.channelSuggestions?.filter((c) => {
+		return c.isGuitarChannel === false;
 	});
 
 	return (
@@ -21,29 +21,29 @@ function SuggestChannelSubscriptions(props: SuggestChannelSubscriptionsProps) {
 				<i className="fab fa-youtube"></i> Channels you've subscribed to:
 			</h4>
 
-			{sailingRelated?.length > 0 && (
+			{guitarRelated?.length > 0 && (
 				<>
 					<p className="bottom-spacer">
-						Some of your subscriptions are likely to be sailing channels and are{" "}
-						<strong>not yet listed on sailing-channels.com</strong>. You can easliy suggest them
-						to be listed:
+						Some of your subscriptions are likely to be guitar channels and are{" "}
+						<strong>not yet listed on guitar-channels.com</strong>. You can easliy suggest them to
+						be listed:
 					</p>
 
-					<ChannelSuggestList channels={sailingRelated} />
+					<ChannelSuggestList channels={guitarRelated} />
 				</>
 			)}
 
-			{notSailingRelated?.length > 0 && (
+			{notGuitarRelated?.length > 0 && (
 				<>
 					<div className="notification is-warning">
 						<p>
 							The following of your subscriptions are{" "}
-							<strong>probably not sailing-related</strong>, but you can check and suggest them
+							<strong>probably not guitar-related</strong>, but you can check and suggest them
 							as well:
 						</p>
 					</div>
 
-					<ChannelSuggestList channels={notSailingRelated} />
+					<ChannelSuggestList channels={notGuitarRelated} />
 				</>
 			)}
 		</div>

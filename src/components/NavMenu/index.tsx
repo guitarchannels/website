@@ -76,7 +76,7 @@ export default function NavMenu() {
 				</li>
 			</ul>
 
-			<p className="menu-label">Support sailing-channels.com</p>
+			<p className="menu-label">Support guitar-channels.com</p>
 
 			<div>
 				<a
@@ -92,7 +92,7 @@ export default function NavMenu() {
 			</div>
 			<div style={{ marginTop: "5px" }}>
 				<a
-					href="https://paypal.me/sailingchannels"
+					href="https://paypal.me/guitarchannels"
 					target="_blank"
 					className="button is-info is-rounded"
 					onClick={() => {

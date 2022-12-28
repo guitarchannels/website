@@ -8,7 +8,7 @@ function SupportUs(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Support us | Sailing Channels</title>
+				<title>Support us | Guitar Channels</title>
 			</Helmet>
 
 			<Hero title="Support us" />
@@ -41,9 +41,9 @@ function SupportUs(props) {
 			<div className="columns support-row">
 				<div className="column has-text-centered">
 					<a
-						href="https://www.patreon.com/sailingchannels"
+						href="https://www.patreon.com/guitarchannels"
 						target="_blank"
-						title="Go to sailing-channels Patreon page"
+						title="Go to guitar-channels Patreon page"
 						rel="noopener"
 					>
 						<img
@@ -56,10 +56,10 @@ function SupportUs(props) {
 				</div>
 				<div className="column has-text-centered">
 					<a
-						href="https://www.paypal.me/sailingchannels"
+						href="https://www.paypal.me/guitarchannels"
 						target="_blank"
 						rel="noopener"
-						title="Go to sailing-channels PayPal page"
+						title="Go to guitar-channels PayPal page"
 					>
 						<img
 							src={require("../../static/img/paypal.png")}

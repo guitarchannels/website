@@ -33,7 +33,7 @@ function Topics(props) {
 	return (
 		<>
 			<Helmet>
-				<title>Topics | Sailing Channels</title>
+				<title>Topics | Guitar Channels</title>
 			</Helmet>
 
 			<section className="hero channels-hero">
@@ -41,7 +41,7 @@ function Topics(props) {
 					<h1 className="title">
 						Topics <span className="tag is-success">beta</span>
 					</h1>
-					<h2 className="subtitle">Explore sailing channels by their topics.</h2>
+					<h2 className="subtitle">Explore guitar channels by their topics.</h2>
 				</div>
 			</section>
 
